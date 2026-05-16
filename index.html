@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/PedroDV.ico" type="image/x-icon">
+    <title>Pedro Lucas DEV</title>
+
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="nav-titles">
+        <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#contatos" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="imagens/IMG_4078 - 600.JPG" alt="Foto de Pedro Lucas" class="foto-perfil">
+        <!--se apertar ctrl + espaço aparece as pastas que estão as imagens-->
+        <h1>Pedro Lucas</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Web</p>
+
+    </main><!-- o main é a parte principal do site, onde tem a foto e o nome do desenvolvedor -->
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Sou Pedro Lucas, desenvolvedor web concluinte em Análise e Desenvolvimento de Sistemas pela UEPB. Construo interfaces modernas e funcionais, com foco em aprendizado contínuo e projetos que resolvem problemas reais.</p>
+        </div>
+    </section><!-- o section é uma seção do site, onde tem o título e o parágrafo sobre o desenvolvedor -->
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="imagens/projeto1.png" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="projetos-titulo">Plataforma de Cuidados Animais</h3>
+                    <p class="projetos-descricao">Uma plataforma moderna de adoção e hospedagem de animais de estimação.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="imagens/projeto2.png" alt="projeto2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="projetos-titulo">Formulário de Agendamento de Visitas</h3>
+                    <p class="projetos-descricao">Formulário de agendamento de visitas para a Fundação José Américo.</p>
+                </div>
+            </div>
+        </div>
+    </section><!-- o section é uma seção do site, onde tem o título e o parágrafo sobre o desenvolvedor -->
+
+    <section id="contatos" class="contato">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="campo-form" id="mensagem" rows="6"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar Mensagem</button>
+        </form>
+    </section>
+    <!-- o section é uma seção do site, onde tem o título e o formulário de contato do desenvolvedor -->
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
